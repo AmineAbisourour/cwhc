@@ -5,9 +5,11 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    // 'compilerOptions/moduleResolution' must be equal to one of the allowed values 'Classic, Node, Node16, NodeNext'. Value found '"bundler"'. Or 'compilerOptions/moduleResolution' must match pattern '^(([Nn]ode)|([Nn]ode16)|([Nn]ode[Nn]ext)|([Cc]lassic))$'. Value found 'bundler'
+    "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
