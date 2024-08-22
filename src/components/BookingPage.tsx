@@ -23,28 +23,28 @@ function BookingPage() {
     time: null,
     phone: "",
   });
-  const handleCityChange = (value) => {
+  const handleCityChange = (value: any) => {
     setBookingData((prevData) => ({
       ...prevData,
       city: value,
     }));
     setStep(2);
   };
-  const handleDateChange = (value) => {
+  const handleDateChange = (value: any) => {
     setBookingData((prevData) => ({
       ...prevData,
       date: value,
     }));
     setStep(3);
   };
-  const handleTimeChange = (value) => {
+  const handleTimeChange = (value: any) => {
     setBookingData((prevData) => ({
       ...prevData,
       time: value,
     }));
     setStep(4);
   };
-  const handlePhoneChange = (value) => {
+  const handlePhoneChange = (value: any) => {
     setBookingData((prevData) => ({
       ...prevData,
       phone: value,
@@ -83,11 +83,11 @@ function BookingPage() {
                   <span className="font-semibold uppercase text-[0.65rem]">
                     Date
                   </span>
-                  <span className="font-normal">
+                  {/* <span className="font-normal">
                     {bookingData.date
                       ? bookingData.date.toLocaleDateString()
                       : "Select date"}
-                  </span>
+                  </span> */}
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="p-0 max-w-[276px]">
@@ -107,11 +107,11 @@ function BookingPage() {
                   <span className="font-semibold uppercase text-[0.65rem]">
                     Time
                   </span>
-                  <span className="font-normal">
+                  {/* <span className="font-normal">
                     {bookingData.time
                       ? bookingData.time.toLocaleTimeString()
                       : "Select time"}
-                  </span>
+                  </span> */}
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="p-0 max-w-[276px]">
@@ -141,11 +141,11 @@ function BookingPage() {
             </div>
             <div className="flex justify-between">
               <span>Date:</span>
-              <span>{bookingData.date?.toLocaleDateString()}</span>
+              {/* <span>{bookingData.date?.toLocaleDateString()}</span> */}
             </div>
             <div className="flex justify-between">
               <span>Time:</span>
-              <span>{bookingData.time?.toLocaleTimeString()}</span>
+              {/* <span>{bookingData.time?.toLocaleTimeString()}</span> */}
             </div>
             <div className="flex justify-between">
               <span>Phone:</span>
